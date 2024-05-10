@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>山 CANIFA | Resgiter</title>
+    <!-- =========Link favicon========-->
+    <!-- <link rel="icon" type="image/x-icon" href="/assets/imgs/favicon-16x16.ico" /> -->
+    <!--=========== Link css ================ -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/register.css">
+    <!-------------------------------------------------- -->
+    <!-- ============link fonts================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- --------------------------------------------------- -->
+    <!-- ==== link icon font ====-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- -------------------------------------------------- -->
+
+</head>
+
+<body>
+    <main id="js-modal" class="modal ">
+        <div id="js-modal-content" class="modal_content">
+            <!---------- resgiter -->
+            <div class="modal_inner">
+                <div id="js-modal-close" class="modal-close">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+                <header class="modal-header">
+                    <div class="modal-imgs"></div>
+                    <div class="modal-head-group">
+                        <span class="modal-head-register">Đăng ký</span>
+                        <span id="js-link-login" class="modal-head-login">Đăng nhập</span>
+                    </div>
+                </header>
+                <section class="modal-body">
+                    <label for="resgiter-fullName" class="modal-label">
+                        Họ và tên:
+                    </label>
+                    <input type="text" id="resgiter-fullName" placeholder="Họ và tên" class="modal-input">
+                    <label for="resgiter-email" class="modal-label">
+                        Email:
+                    </label>
+                    <input type="text" id="resgiter-email" placeholder="example.@gmail.com" class="modal-input">
+
+                    <div class="modal-group">
+                        <div class="modal-group-label">
+                            <label for="resgiter-pass" class="modal-label">
+                                Mật khẩu:
+                            </label>
+                            <input type="password" id="resgiter-pass" placeholder="Mật khẩu" class="modal-input">
+                        </div>
+                        <div class="modal-group-label">
+                            <label for="resgiter-pass" class="modal-label">
+                                Nhập lại mật khẩu:
+                            </label>
+                            <input type="password" id="resgiter-pass" placeholder="Nhập lại mật khẩu"
+                                class="modal-input">
+                        </div>
+                    </div>
+                </section>
+                <div class="modal_aside">
+                    <p class="modal_policy-text">
+                        Bằng việc đăng kí, bạn đã đồng ý với Canifa về
+                        <a href="" class="modal_text-link">Điểu khoản dịch vụ</a> &
+                        <a href="" class="modal_text-link">Chính sách bảo mật</a>
+                    </p>
+                </div>
+
+                <div class="modal_controls">
+                    <button class="btn btn-primary ">ĐĂNG KÝ</button>
+                </div>
+            </div>
+            <!-- end resgiter -->
+        </div>
+    </main>
+    <script src="./assets/javascript/register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin CANIFA</title>
+    <!-- =========Link favicon========-->
+    <link rel="icon" type="image/x-icon" href="../assets/imgs/favicon-16x16.ico" />
+    <!--=========== Link css ================ -->
+    <link rel="stylesheet" href="../Admin/AdminAssets/css/adminMain.css">
+    <link rel="stylesheet" href="../Admin/AdminAssets/css/adminBase.css">
+    <link rel="stylesheet" href="../Admin/AdminAssets/css/listProduct.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <!-- ================================================= -->
+
+    <!-- ============link fonts================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- --------------------------------------------------- -->
+    <!-- ==== link icon font ====-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- -------------------------------------------------- -->
+    <!-- ===Link thư viện owl carousel=== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ============================= -->
+
+</head>
+
+<body>
+    <main class="appAdmin">
+        <div class="grid">
+            <div class="row sm-gutter">
+                <nav class="sidebar close ">
+                    <header class="sidebar_h">
+                        <div class="sidebar_img">
+                            <a href="" class="sidebar_link">
+                                <img src="/assets/imgs/logo.svg" alt="">
+                                <span class="sidebar_title">
+                                    CANIFA admin
+                                </span>
+                            </a>
+                        </div>
+                    </header>
+                    <section class="menu_sidebar">
+                        <div class="menu_content">
+                            <ul class="menu_content-list">
+                                <li class="menu_content-item">
+                                    <a href="../Admin/Admin.html" class="menu_content-link">
+                                        <ion-icon name="storefront-outline"></ion-icon>
+                                        <span class="menu_content-text">
+                                            Trang chủ
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu_content-item search-box">
+                                    <ion-icon name="search-outline"></ion-icon>
+                                    <input type="text" placeholder="Mời bạn nhập...">
+                                </li>
+                                <li class="menu_content-item">
+                                    <a href="../Admin/DanhMucSanPham.html" class="menu_content-link">
+                                        <ion-icon name="layers-outline"></ion-icon>
+                                        <span class="menu_content-text">
+                                            Danh sách sản phẩm
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu_content-item">
+                                    <a href="" class="menu_content-link">
+                                        <ion-icon name="terminal-outline"></ion-icon>
+                                        <span class="menu_content-text">
+                                            Hóa đơn nhập
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu_content-item">
+                                    <a href="" class="menu_content-link">
+                                        <ion-icon name="save-outline"></ion-icon>
+                                        <span class="menu_content-text">
+                                            Hóa đơn bán
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu_content-item">
+                                    <a href="" class="menu_content-link">
+                                        <ion-icon name="car-outline"></ion-icon>
+                                        <span class="menu_content-text">
+                                            Quản lý nhà cung cấp
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu_content-item">
+                                    <a href="" class="menu_content-link">
+                                        <ion-icon name="people-outline"></ion-icon>
+                                        <span class="menu_content-text">
+                                            Quản lý khách hàng
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="menu_content-item">
+                                    <a href="" class="menu_content-link">
+                                        <ion-icon name="log-out-outline"></ion-icon>
+                                        <span class="menu_content-text">
+                                            Đăng xuất
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-content-bottom">
+                            <li class="menu_content-mode menu_content-select">
+                                <div class="menu_content-moon-sun">
+                                    <ion-icon name="sunny-outline" class="moon-sun-icon sunny"></ion-icon>
+                                    <ion-icon name="moon-outline" class="moon-sun-icon moon"></ion-icon>
+                                </div>
+                                <span class="menu_content-span">
+                                    chế độ sáng
+                                </span>
+                                <div class="menu_content-switch">
+                                    <span class="switch"></span>
+                                </div>
+                            </li>
+                        </div>
+                    </section>
+                </nav>
+                <div class="app_contents">
+                    <header class="content_wrapper">
+                        <nav class="content_inner-nav">
+                            <ul class="content_nav-list">
+                                <li class="content_nav-item">
+                                    <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+                                </li>
+                                <li class="content_nav-item">
+                                    <div class="content_nav-input">
+                                        <input type="text" class="content_input-search" placeholder="Mời bạn nhập...">
+                                        <button class="content_nav-btn">
+                                            <ion-icon name="search-outline" class="content_input-icon"></ion-icon>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="content_nav-list">
+                                <li class="content_nav-item">
+                                    <ion-icon class="content_nav-icon" name="grid-outline"></ion-icon>
+                                </li>
+                                <li class="content_nav-item">
+                                    <img src="/Admin/AdminAssets/imgs/vietnam.png" class="content_nav-img" alt="">
+                                </li>
+                                <li class="content_nav-item">
+                                    <ion-icon class="content_nav-icon" name="scan-outline"></ion-icon>
+                                </li>
+                                <li class="content_nav-item">
+                                    <ion-icon class="content_nav-icon noti-icon"
+                                        name="notifications-outline"></ion-icon>
+                                    <span class="noti-count">3</span>
+                                </li>
+                                <li class="content_nav-item">
+                                    <ion-icon class="content_nav-icon seting-icon" name="settings-outline"></ion-icon>
+                                </li>
+                                <li class="content_nav-item">
+                                    <div class="profile-item">
+                                        <img src="/Admin/AdminAssets/imgs/profile.png" alt="" class="profile-img">
+                                        <div class="profile-name">
+                                            <span>Nguyễn Trường Sơn</span>
+                                            <p class="profile-user">
+                                                Admin
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <div class="content_table">
+                        <div class="content_table-group">
+                            <h3 class="content_table-head">Liệt kê Users</h3>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item active">
+                                    <a href="" class="breadcrumb-link">
+                                        <ion-icon name="home-outline"></ion-icon>
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item active"> Trang chủ</li>
+                                <li class="breadcrumb-item blue "> Liệt kê users</li>
+                            </ul>
+                        </div>
+                        <div class="content_table-inner">
+                            <div class="table-user--info">
+                                <h3>Thông tin users</h3>
+                            </div>
+                            <div class="table-user--body">
+                                <a href="" class="table-user-link">
+                                    <button class="btn btn-primary">
+                                        Thêm users
+                                    </button>
+                                </a>
+                                <!-- <div class="table-user-wrap">
+                                    <table class="tb-display">
+                                        <thead>
+                                            <tr>
+
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="../Admin/AdminAssets/js/adminStyle.js"></script>
+
+</html>

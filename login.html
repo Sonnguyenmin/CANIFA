@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <title>山 CANIFA | Login</title>
+    <!-- =========Link favicon========-->
+    <!-- <link rel="icon" type="image/x-icon" href="/assets/imgs/favicon-16x16.ico" /> -->
+    <!--=========== Link css ================ -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <!-------------------------------------------------- -->
+    <!-- ============link fonts================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- --------------------------------------------------- -->
+    <!-- ==== link icon font ====-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- -------------------------------------------------- -->
+
+    <!-- ===Link thư viện owl carousel=== -->
+    <link rel="stylesheet" href="/assets/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ============================= -->
+
+</head>
+
+<body>
+    <div id="js-modal" class="modal">
+        <div id="js-modal-content" class="modal_content ">
+            <!---------- login -->
+            <div class="modal_inner">
+                <div id="js-modal-close" class="modal-close ">
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+                <header class="modal-header">
+                    <div class="modal-imgs"></div>
+                    <div class="modal-head">
+                        Đăng nhập
+                    </div>
+                </header>
+                <section class="modal-body">
+                    <label for="resgiter-email" class="modal-label">
+                        Nhập email của bạn
+                    </label>
+                    <input type="text" id="resgiter-email" class="modal-input" placeholder="Email">
+
+                    <label for="resgiter-pass" class="modal-label">
+                        Mật khẩu:
+                    </label>
+                    <input type="password" id="resgiter-pass" class="modal-input" placeholder="Mật khẩu">
+                </section>
+                <div class="modal_aside">
+                    <div class="modal_help">
+                        <a href="" class="modal_help-link modal_help-forgot">Quên mật khẩu</a>
+                        <span class="modal_help-separate"></span>
+                        <a href="" class="modal_help-link">Cần trợ giúp ?</a>
+
+                    </div>
+                </div>
+
+                <div class="modal_controls">
+                    <button id="js-btn-register" class="btn btn-normal">ĐĂNG KÝ</button>
+                    <button class="btn btn-primary">ĐĂNG NHẬP</button>
+                </div>
+            </div>
+            <!-- end-->
+        </div>
+    </div>
+    <script src="./assets/javascript/login.js"></script>
+</body>
+
+</html>
